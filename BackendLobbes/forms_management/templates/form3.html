@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Confimation </title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+    body {
+      background-image: url("https://static.vecteezy.com/system/resources/thumbnails/046/370/769/small/blue-sky-and-clouds-background-view-from-the-airplane-photo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .form-card {
+      max-width: 450px;
+      width: 100%;
+      padding: 2rem;
+      background: white;
+      border-radius: 45px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-card dashed">
+  <h2 class="text-center mb-4 text-primary">Meeting Setup</h2>
+
+  <form method="POST"  action="/form/step3/submit/?idLead={{ idLead }}">
+
+       {% csrf_token %}
+
+    <input type="hidden" name="idLead" value="{{ idLead }}">
+
+    <div class="mb-4">
+      <label class="form-label fw-bold">Please, select your final confirmation</label>
+      <select name="confirmation" class="form-select" required>
+        <option value="confirm">Confirm</option>
+        <option value="cancel">Cancel</option>
+      </select>
+    </div>
+
+    <div class="mb-4">
+      <label class="form-label fw-bold">Please, select a preferred communication chanel</label>
+      <select name="preferredChannel" class="form-select" required>
+        <option value="email">Email</option>
+        <option value="whatssap">Whatssap</option>
+        <option value="phone">Phone</option>
+      </select>
+    </div>
+
+    <div class="mb-4 " >
+      <label class="form-label fw-bold">Additional notes: </label>
+      <textarea class="form-control" placeholder="Write your notes here" name="notes">
+-
+       </textarea>
+    </div>
+
+    <div class="d-grid mt-4">
+      <button type="submit" class="btn btn-primary btn-lg botonRadius border-primary rounded-5 shadow">Save </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
