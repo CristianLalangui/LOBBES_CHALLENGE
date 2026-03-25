@@ -54,15 +54,19 @@ class TaskView(APIView):
         return Response({"success": False, "errors": errores}, status=status.HTTP_400_BAD_REQUEST)
 
 
-class addLeadEmail(APIView):
+class getAllTasks(APIView):
 
-    def post(self, request):
-        queryIdlead = request.POST.get('idLead')
-        queryIdTask = request.POST.get('idTask')
-        TaskLeadId = TaskModel.objects.get(taskId=queryIdTask)
-        TaskLeadId.leadId = queryIdlead
+    def get(self, request):
+        tasks = list(TaskModel.objects.all().values())
 
-        TaskLeadId.save()
+        return Response({
+            "success": True,
+            "data": tasks
+        }, status=status.HTTP_200_OK)
+
+
+
+
 
 
 class TaskViewActualizarDatos(APIView):

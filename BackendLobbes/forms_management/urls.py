@@ -12,6 +12,7 @@ urlpatterns = [
     path("form/step3/submit/", FormView3.as_view()),
     path("form/addTasks/", TaskView.as_view()),
     path("form/updateTasks/", TaskViewActualizarDatos.as_view()),
+    path("form/getAllTasks/",getAllTasks.as_view())
 
 
 

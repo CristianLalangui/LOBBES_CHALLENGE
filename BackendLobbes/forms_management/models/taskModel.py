@@ -19,6 +19,7 @@ class TaskModel(models.Model):
     formStep = models.CharField(max_length=3,unique=False,blank=False,null=False, choices=StepFormChoices.choices, default=StepFormChoices.STEP1)
     formDate = models.DateTimeField(max_length=50,unique=False,blank=False,null=False)
     status = models.CharField(max_length=100, default="Form 1 pending")
+    title = models.CharField(max_length=50,unique=False,blank=False,null=False)
 
 
     class Meta:

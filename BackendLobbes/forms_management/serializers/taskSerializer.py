@@ -10,7 +10,8 @@ class taskSerializer(serializers.ModelSerializer):
     email = serializers.CharField(required=True)
     taskId = serializers.CharField(required=True)
     formDate = serializers.CharField(required=True)
-    leadId = serializers.CharField(required=False)
+    leadId = serializers.CharField(required=True)
+    title = serializers.CharField(required=True)
 
     def validate_form_step(self, value):
         if not value or not value.strip():
@@ -26,7 +27,7 @@ class taskSerializer(serializers.ModelSerializer):
         model = TaskModel
 
         fields = (
-            "formStep", "email", "taskId", "formDate","leadId"
+            "formStep", "email", "taskId", "formDate","leadId","title"
         )
 
 
