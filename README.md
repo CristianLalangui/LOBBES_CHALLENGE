@@ -87,7 +87,7 @@ coninues being the same  and by Title, that in this case  the Title is **Send fo
 
 
 
-## ⚡ System Exeution<br>
+## ⚡ System Execution<br>
 
 **Backend Service (Django)** <br>
 
@@ -113,6 +113,20 @@ After that migrate to create the necesary tables in SQLite
 And finally run the backend service 
 
          python manage.py runserver
+
+if everything is OK, the console will show a mesage like this
+>  System check identified 2 issues (0 silenced).<br>
+   March 26, 2026 - 15:04:43<br>
+   Django version 6.0.1, using settings 'Forms.settings'<br>
+   Starting development server at http://127.0.0.1:8000/<br>
+   Quit the server with CTRL-BREAK.<br><br>
+   WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.<br>
+   For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/<br>
+
+
+**Ngrok System** <br>
+Open your console cmd and write the following command 
+         
          
 ##  🤖  Automation
 
