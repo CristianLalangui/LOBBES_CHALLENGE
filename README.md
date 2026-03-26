@@ -114,7 +114,7 @@ And finally run the backend service
 
          python manage.py runserver
 
-if everything is OK, the console will show a mesage like this
+if everything is OK, the console will show a mesage like this :
 >  System check identified 2 issues (0 silenced).<br>
    March 26, 2026 - 15:04:43<br>
    Django version 6.0.1, using settings 'Forms.settings'<br>
@@ -125,8 +125,33 @@ if everything is OK, the console will show a mesage like this
 
 
 **Ngrok System** <br>
-Open your console cmd and write the following command 
-         
+Before run this executable, we must first have installed **Ngrok**<br>
+Open your console cmd and write the following command, 
+
+         ngrok http 800
+
+*In this case I used port 8000 because my Django project is running in port 8000*
+*You can change the port acording to your needings*
+
+If everything goes OK ,  in the console will appear a message similar to this : 
+
+>  Session Status                online<br>
+   Account                       cristianalg740@gmail.com (Plan: Free)<br>
+   Update                        update available (version 3.37.3, Ctrl-U to update)<br>
+   Version                       3.36.1-msix-stable<br>
+   Region                        Europe (eu)<br>
+   Web Interface                 http://127.0.0.1:4040<br>
+   Forwarding                    https://pelletlike-primely-shalanda.ngrok-free.dev -> http://localhost:8000<br><br>
+   
+   Connections                   ttl     opn     rt1     rt5     p50     p90<br>
+                                 0       0       0.00    0.00    0.00    0.00<br>
+                                 
+  Executing the previous ngrok command, we will get a temporary https url that is pubclic <br> and will help you to send forms and manage the logic of your backend service <br>
+  For example : 
+
+             Forwarding       https://pelletlike-primely-shalanda.ngrok-free.dev -> http://localhost:8000
+             
+*This url, starting with https replaces your localhost and your port*          
          
 ##  🤖  Automation
 
