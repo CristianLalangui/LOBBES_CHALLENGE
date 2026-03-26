@@ -142,7 +142,6 @@ If everything goes OK ,  in the console will appear a message similar to this :
    Region                        Europe (eu)<br>
    Web Interface                 http://127.0.0.1:4040<br>
    Forwarding                    https://pelletlike-primely-shalanda.ngrok-free.dev -> http://localhost:8000<br><br>
-   
    Connections                   ttl     opn     rt1     rt5     p50     p90<br>
                                  0       0       0.00    0.00    0.00    0.00<br>
                                  
