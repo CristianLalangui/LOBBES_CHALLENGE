@@ -4,6 +4,7 @@
 
 **The Project's arquitecture has the following arquitecture :**
 
+![Arquitecture](Docs/Arquitectrue.png)
 
 
 **Components**
@@ -83,8 +84,10 @@ coninues being the same  and by Title, that in this case  the Title is **Send fo
 
 
 
-## 🔗 API Endpoints
+## 🔗 API Endpoints<br>
+The backend service has the following endpoints : 
 
+![EndpointLobbes](Docs/EndpointLobbes.png)
 
 
 ## ⚡ System Execution<br>
