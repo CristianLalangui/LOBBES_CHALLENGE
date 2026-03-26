@@ -1,6 +1,6 @@
 # Lobbes Automation Integation 
 
-## Architecture 
+## 📐 Architecture 
 
 **The Project's arquitecture has the following arquitecture :**
 
@@ -87,8 +87,32 @@ coninues being the same  and by Title, that in this case  the Title is **Send fo
 
 
 
-## ⚡ System Exeution
+## ⚡ System Exeution<br>
 
+**Backend Service (Django)** <br>
 
+In order to make this work , first clone the project and open the backendLobbes directory in your computer<br>
+if you haven't done it yet, 
+
+       git clone <url-repository>
+Second, create a virtual environment 
+
+           python -m venv venv
+
+Third,  you have to activate the  environment created
+
+        .\venv\Scripts\activate         
+           
+Then, install the necesary requirements written in requirements.txt
+
+         pip install -r requirements.txt
+After that migrate to create the necesary tables in SQLite
+
+         python manage.py migrate
+         
+And finally run the backend service 
+
+         python manage.py runserver
+         
 ##  🤖  Automation
 
