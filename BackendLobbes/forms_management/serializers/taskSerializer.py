@@ -6,7 +6,7 @@ from forms_management.models.taskModel import StepFormChoices, TaskModel
 
 class taskSerializer(serializers.ModelSerializer):
 
-    formStep = serializers.ChoiceField(choices=StepFormChoices)
+
     email = serializers.CharField(required=True)
     taskId = serializers.CharField(required=True)
     formDate = serializers.CharField(required=True)
@@ -27,7 +27,7 @@ class taskSerializer(serializers.ModelSerializer):
         model = TaskModel
 
         fields = (
-            "formStep", "email", "taskId", "formDate","leadId","title"
+             "email", "taskId", "formDate","leadId","title"
         )
 
 

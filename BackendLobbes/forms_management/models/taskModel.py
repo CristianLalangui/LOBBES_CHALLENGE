@@ -16,7 +16,6 @@ class TaskModel(models.Model):
     email = models.CharField(max_length=50,unique=False,blank=False,null=False)
     taskId = models.CharField(max_length=50,unique=False,blank=False,null=False)
     leadId = models.CharField(max_length=50,unique=False,blank=True,null=True)
-    formStep = models.CharField(max_length=3,unique=False,blank=False,null=False, choices=StepFormChoices.choices, default=StepFormChoices.STEP1)
     formDate = models.DateTimeField(max_length=50,unique=False,blank=False,null=False)
     status = models.CharField(max_length=100, default="Form 1 pending")
     title = models.CharField(max_length=50,unique=False,blank=False,null=False)
