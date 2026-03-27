@@ -61,7 +61,7 @@ Tasks are created in Django backend, with a id<br>
 We make a log to the task with the Title **Send form1** to indicate the automation has inicialized<br>
 ![EndpointLobbes](Docs/logAutomatizonInicalized.png)<br>
 Status is reset via API, of all tasks filtered by email, in my case is **cristianalg740@gmail.com**<br>
-![EndpointLobbes](Docs/AllStatusto0.png)<br>
+![EndpointLobbes](Docs/AllStatusto0.png) <br>
 Once we have created the tasks we call again backend service to get tasks by Title and email, the title for 
 the first task is **Send form 1**,
 
@@ -69,7 +69,7 @@ the first task is **Send form 1**,
 When we get that task we procced to change the status to **In progress**
 And we will send the first form to the lead<br>
 
-![EndpointLobbes](Docs/form1email.png)<br>
+![EndpointLobbes](Docs/form1email.png) <br>
 
 
 
