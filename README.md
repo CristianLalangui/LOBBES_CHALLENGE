@@ -47,7 +47,7 @@
 
 
 Tasks are created in Lobees CRM, in order to do that we must first have some leads,
-We have one parent task **Send forms** and three child tasks **Send form 1**, **Send form 2**,<br> **Send form 3**,
+We have one parent task **Send forms** and three child tasks **Send form 1**, **Send form 2**, **Send form 3**,
 each task will be ligated to a form,<br>
 ![EndpointLobbes](Docs/InicialTasks.png)
 
