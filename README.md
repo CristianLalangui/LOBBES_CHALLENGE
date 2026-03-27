@@ -92,7 +92,7 @@ coninues being the same  and by Title, that in this case  the Title is **Send fo
 
 After we get that task, our backend will proceed to send the second form to the lead by email, and will change the status of the second Task, to **In progress** <br>
 
-![EndpointLobbes](Docs/task2Json.png)<br>
+![EndpointLobbes](Docs/task2Inprogreess.png)<br>
 
 Our bakend Service will send us the second form<br>
 ![EndpointLobbes](Docs/form2Email.png)<br>
@@ -119,16 +119,20 @@ coninues being the same  and by Title, that in this case  the Title is **Send fo
 After we get the  task,  our backend will proceed to send the third form to the lead by email, and will change the status of the second Task, to **In progress** 
 ![EndpointLobbes](Docs/task3inProgress.png)<br>
 
+
+Our bakend Service will send us the third form <br>
+![EndpointLobbes](Docs/form3Email.png)<br>
+
 **4. Form 3 Flow**
  
 Once the lead submmits its responses of the second form, the responses will be saved in Django and n8n will recive a Json, with the information
 received
 
-But to add a taskLog with descripcion **Automation completed** , we must first filter by **proposed time**, if  **confirmation == confirm**  we change
+But to add a taskLog with descripcion **Automation completed** , we must first filter by **proposed time**
+
+If  **confirmation == confirm**  we change
 the status of that task to **completed**, 
 
-Our bakend Service will send us the third form <br>
-![EndpointLobbes](Docs/form3Email.png)<br>
 
 
 ## 🔗 API Endpoints<br>
