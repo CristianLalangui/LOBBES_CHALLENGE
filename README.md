@@ -2,7 +2,7 @@
 
 ## 📐 Architecture 
 
-**The Project's arquitecture has the following arquitecture :**
+**The Project's arquitecture has the following arquitecture:**
 
 ![Arquitecture](Docs/ArquitectrueLobbes.png)
 
@@ -85,7 +85,7 @@ coninues being the same  and by Title, that in this case  the Title is **Send fo
 
 
 ## 🔗 API Endpoints<br>
-The backend service has the following endpoints : 
+The backend service has the following endpoints: 
 
 ![EndpointLobbes](Docs/EndpointLobbes.png)
 
@@ -117,7 +117,7 @@ And finally run the backend service
 
          python manage.py runserver
 
-if everything is OK, the console will show a mesage like this :
+if everything is OK, the console will show a mesage like this:
 >  System check identified 2 issues (0 silenced).<br>
    March 26, 2026 - 15:04:43<br>
    Django version 6.0.1, using settings 'Forms.settings'<br>
@@ -129,14 +129,14 @@ if everything is OK, the console will show a mesage like this :
 
 **Ngrok System** <br><br>
 Before run this executable, we must first have installed **Ngrok**<br>
-Open your console cmd and write the following command, 
+Open your console cmd and write the following command:
 
          ngrok http 800
 
 *In this case I used port 8000 because my Django project is running in port 8000*
 *You can change the port acording to your needings*
 
-If everything goes OK ,  in the console will appear a message similar to this : 
+If everything goes OK ,  in the console will appear a message similar to this: 
 
 >  Session Status                online<br>
    Account                       cristianalg740@gmail.com (Plan: Free)<br>
@@ -149,7 +149,7 @@ If everything goes OK ,  in the console will appear a message similar to this :
                                  0       0       0.00    0.00    0.00    0.00<br>
                                  
   Executing the previous ngrok command, we will get a temporary https url that is pubclic <br> and will help you to send forms and manage the logic of your backend service<br><br>
-  For example : 
+  For example: 
 
              Forwarding       https://pelletlike-primely-shalanda.ngrok-free.dev -> http://localhost:8000
              
@@ -158,7 +158,7 @@ If everything goes OK ,  in the console will appear a message similar to this :
 **N8N workflow**<br>
 The project has four different workflows, each of them has a different function<br>
 The N8N workflows are the responsibles of communication between Backend Service and <br>
-(Django) and the Lobbes CRM.<br><br>Each workflow must be executed manuyally in the following order<br>
+(Django) and the Lobbes CRM.<br><br>Each workflow must be executed manuyally in the following order:<br>
 
 
 **1️⃣ Workflow Tasks**<br>
