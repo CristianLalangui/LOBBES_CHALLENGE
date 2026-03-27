@@ -51,7 +51,7 @@ We have one parent task **Send forms** and three child tasks **Send form 1**, **
 each task will be ligated to a form,<br>
 ![EndpointLobbes](Docs/InicialTasks.png)
 
-In thre Lobbes CRM will be a Log, for each action, For example, we add a TaskLog, threfore<br>we will know what is happening at every moment
+In thre Lobbes CRM will be a Log, for each action, For example, we add a TaskLog, threfore<br>we will know what is happening at every moment<br>
 ![EndpointLobbes](Docs/taskLogExample.png)
 
 n8n retrieves tasks filtered by lead email, and proceed to pass this tasks to backend service
