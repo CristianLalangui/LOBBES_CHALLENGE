@@ -137,7 +137,7 @@ If  **confirmation == confirm** <br>
 ![EndpointLobbes](Docs/filterByConfirm.png)<br>
 We change
 the status of that task to **completed**,
-![EndpointLobbes](Docs/task3.png)<br>
+![EndpointLobbes](Docs/task3Completed.png)<br>
 
 
 
