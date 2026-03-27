@@ -49,11 +49,15 @@
 Tasks are created in Lobees CRM, in order to do that we must first have some leads,
 We have one parent task **Send forms** and three child tasks **Send form 1**, **Send form 2**, **Send form 3**,
 each task will be ligated to a form,
+
 n8n retrieves tasks filtered by lead email, and proceed to pass this tasks to backend service
 Tasks are created in Django backend, with a id<br>
+
 Status is reset via API, of all tasks filtered by email, in my case is **cristianalg740@gmail.com**
 Once we have created the tasks we call again backend service to get tasks by Title and email, the title for 
-the first task is **Send form 1**, when we get that task we procced to change the status to **In progress** 
+the first task is **Send form 1**,
+
+When we get that task we procced to change the status to **In progress** 
 and we will send the first form to the lead
 
 
@@ -61,27 +65,40 @@ and we will send the first form to the lead
 **2. Form 1 Flow**
 
 Once the lead submmits its responses of the first form, the responses will be saved in Django and n8n will recive a Json, with the information
-received, but to send the second email whith the second form,  we must first filter by **interest**, if  ** interest == yes**  we change
-the status of that task to **completed**, then we call backend service to get tasks stored  in our Django project, and we filter by email which
-coninues being the same  and by Title, that in this case  the Title is **Send form 2**<br>after we get that task,   our backend will proceed to send the second form to the lead by email, and will change the status of the second Task, to ** In progress** 
+received
+
+But to send the second email whith the second form,  we must first filter by **interest**
+
+If  **interest == yes**  we changethe status of that task to **completed**, 
+
+Then we call backend service to get tasks stored  in our Django project, and we filter by email which
+coninues being the same  and by Title, that in this case  the Title is **Send form 2**<br>
+
+After we get that task, our backend will proceed to send the second form to the lead by email, and will change the status of the second Task, to **In progress** 
 
 
 
 **3. Form 2 Flow**
    
 Once the lead submmits its responses of the second form, the responses will be saved in Django and n8n will recive a Json, with the information
-received, but to send the third email with the third form, we must first filter by **proposed time**, if  ** proposed time  == yes**  we change
+received
+
+But to send the third email with the third form, we must first filter by **proposed time**
+
+If  **proposed time  == yes**  we change
 the status of that task to **completed**, then we call backend service to get tasks stored  in our Django project, and we filter by email which
-coninues being the same  and by Title, that in this case  the Title is **Send form 3**<br>after we get task,   our backend will proceed to send the third form to the lead by email, and will change the status of the second Task, to ** Completed ** 
+coninues being the same  and by Title, that in this case  the Title is **Send form 3**<br>
+
+After we get the  task,  our backend will proceed to send the third form to the lead by email, and will change the status of the second Task, to **In progress** 
 
 
 **4. Form 3 Flow**
  
 Once the lead submmits its responses of the second form, the responses will be saved in Django and n8n will recive a Json, with the information
-received, but to send the third email with the third form, we must first filter by **proposed time**, if  ** proposed time  == yes**  we change
-the status of that task to **completed**, then we call backend service to get tasks stored  in our Django project, and we filter by email which
-coninues being the same  and by Title, that in this case  the Title is **Send form 3**<br>after we get task,   our backend will proceed to send the third form to the lead by email, and will change the status of the second Task, to ** Completed ** 
+received
 
+But to add a taskLog with descripcion **Automation completed** , we must first filter by **proposed time**, if  ** proposed time  == yes**  we change
+the status of that task to **completed**, 
 
 
 ## 🔗 API Endpoints<br>
@@ -194,5 +211,6 @@ The N8N workflows are the responsibles of communication between Backend Service 
 -Changes the status of tasks<br>
 -Add tasksLogs to CRM<br>
 ![WfForm3](Docs/workflow3.png)
-##  🤖  Automation
+
+
 
