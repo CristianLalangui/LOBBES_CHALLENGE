@@ -58,7 +58,7 @@ and we will send the first form to the lead
 
 
 
-2. Form 1 Flow
+**2. Form 1 Flow**
 
 Once the lead submmits its responses of the first form, the responses will be saved in Django and n8n will recive a Json, with the information
 received, but to send the second email whith the second form,  we must first filter by **interest**, if  ** interest == yes**  we change
@@ -67,7 +67,7 @@ coninues being the same  and by Title, that in this case  the Title is **Send fo
 
 
 
-3. Form 2 Flow
+**3. Form 2 Flow**
    
 Once the lead submmits its responses of the second form, the responses will be saved in Django and n8n will recive a Json, with the information
 received, but to send the third email with the third form, we must first filter by **proposed time**, if  ** proposed time  == yes**  we change
@@ -75,7 +75,7 @@ the status of that task to **completed**, then we call backend service to get ta
 coninues being the same  and by Title, that in this case  the Title is **Send form 3**<br>after we get task,   our backend will proceed to send the third form to the lead by email, and will change the status of the second Task, to ** Completed ** 
 
 
-4. Form 3 Flow
+**4. Form 3 Flow**
  
 Once the lead submmits its responses of the second form, the responses will be saved in Django and n8n will recive a Json, with the information
 received, but to send the third email with the third form, we must first filter by **proposed time**, if  ** proposed time  == yes**  we change
