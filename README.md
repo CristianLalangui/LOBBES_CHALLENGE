@@ -84,7 +84,7 @@ But to send the second email whith the second form,  we must first filter by **i
 
 If  **interest == yes**  we changethe status of that task to **completed**, <br>
 
-![EndpointLobbes](Docs/tsak1Completed.png)<br>
+![EndpointLobbes](Docs/tsak1Compleed.png)<br>
 Then we call backend service to get tasks stored  in our Django project, and we filter by email which
 coninues being the same  and by Title, that in this case  the Title is **Send form 2**<br>
 
@@ -101,16 +101,23 @@ Our bakend Service will send us the second form<br>
 **3. Form 2 Flow**
    
 Once the lead submmits its responses of the second form, the responses will be saved in Django and n8n will recive a Json, with the information
-received
+received<br>
 
-But to send the third email with the third form, we must first filter by **proposed time**
+![EndpointLobbes](Docs/task2Json.png)<br>
+
+But to send the third email with the third form, we must first filter by **proposed time**<br>
+![EndpointLobbes](Docs/filterByProposed.png)<br>
 
 If  **proposed time  == yes**  we change
-the status of that task to **completed**, then we call backend service to get tasks stored  in our Django project, and we filter by email which
+the status of that task to **completed**<br>
+![EndpointLobbes](Docs/task2Copleted.png)<br>
+
+Then we call backend service to get tasks stored  in our Django project, and we filter by email which
 coninues being the same  and by Title, that in this case  the Title is **Send form 3**<br>
 
-After we get the  task,  our backend will proceed to send the third form to the lead by email, and will change the status of the second Task, to **In progress** 
 
+After we get the  task,  our backend will proceed to send the third form to the lead by email, and will change the status of the second Task, to **In progress** 
+![EndpointLobbes](Docs/task3inProgress.png)<br>
 
 **4. Form 3 Flow**
  
