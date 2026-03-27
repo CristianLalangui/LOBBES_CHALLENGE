@@ -48,17 +48,28 @@
 
 Tasks are created in Lobees CRM, in order to do that we must first have some leads,
 We have one parent task **Send forms** and three child tasks **Send form 1**, **Send form 2**, **Send form 3**,
-each task will be ligated to a form,
+each task will be ligated to a form,<br>
+![EndpointLobbes](Docs/InicialTasks.png)
+
+In thre Lobbes CRM will be a Log, for each action, For example, we add a TaskLog, threfore<br>we will know what is happening at every moment<br>
+![EndpointLobbes](Docs/taskLogExample.png)
 
 n8n retrieves tasks filtered by lead email, and proceed to pass this tasks to backend service
 Tasks are created in Django backend, with a id<br>
+![EndpointLobbes](Docs/TasksAddDjango.png)
 
-Status is reset via API, of all tasks filtered by email, in my case is **cristianalg740@gmail.com**
+We make a log to the task with the Title **Send form1** to indicate the automation has inicialized<br>
+![EndpointLobbes](Docs/logAutomatizonInicalized.png)<br>
+Status is reset via API, of all tasks filtered by email, in my case is **cristianalg740@gmail.com**<br>
+![EndpointLobbes](Docs/AllStatusto0.png) <br>
 Once we have created the tasks we call again backend service to get tasks by Title and email, the title for 
 the first task is **Send form 1**,
 
-When we get that task we procced to change the status to **In progress** 
-and we will send the first form to the lead
+
+When we get that task we procced to change the status to **In progress**
+And we will send the first form to the lead<br>
+
+![EndpointLobbes](Docs/form1email.png) <br>
 
 
 
@@ -71,11 +82,14 @@ But to send the second email whith the second form,  we must first filter by **i
 
 If  **interest == yes**  we changethe status of that task to **completed**, 
 
+
 Then we call backend service to get tasks stored  in our Django project, and we filter by email which
 coninues being the same  and by Title, that in this case  the Title is **Send form 2**<br>
 
 After we get that task, our backend will proceed to send the second form to the lead by email, and will change the status of the second Task, to **In progress** 
 
+Our bakend Service will send us the second form<br>
+![EndpointLobbes](Docs/form2Email.png)<br>
 
 
 **3. Form 2 Flow**
@@ -97,8 +111,11 @@ After we get the  task,  our backend will proceed to send the third form to the 
 Once the lead submmits its responses of the second form, the responses will be saved in Django and n8n will recive a Json, with the information
 received
 
-But to add a taskLog with descripcion **Automation completed** , we must first filter by **proposed time**, if  ** proposed time  == yes**  we change
+But to add a taskLog with descripcion **Automation completed** , we must first filter by **proposed time**, if  **confirmation == confirm**  we change
 the status of that task to **completed**, 
+
+Our bakend Service will send us the third form <br>
+![EndpointLobbes](Docs/form3Email.png)<br>
 
 
 ## 🔗 API Endpoints<br>
