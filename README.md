@@ -47,20 +47,27 @@
 
 
 Tasks are created in Lobees CRM, in order to do that we must first have some leads,
-We have one parent task **Send forms** and three child tasks **Send form 1**, **Send form 2**, **Send form 3**,
-each task will be ligated to a form,
+We have one parent task **Send forms** and three child tasks **Send form 1**, **Send form 2**,<br> **Send form 3**,
+each task will be ligated to a form,<br>
+![EndpointLobbes](Docs/inicialTasks.png)
+
+In thre Lobbes CRM will be a Log, for each action, For example, we add a TaskLog, threfore<br>we will know what is happening at every moment
+![EndpointLobbes](Docs/taskLogExample.png)
 
 n8n retrieves tasks filtered by lead email, and proceed to pass this tasks to backend service
 Tasks are created in Django backend, with a id<br>
+![EndpointLobbes](Docs/TasksAddDjango.png)
 
+We make a log to the task with the Title **Send form1** to indicate the automation has inicialized
+![EndpointLobbes](Docs/logAutomatizonInicialized.png)
 Status is reset via API, of all tasks filtered by email, in my case is **cristianalg740@gmail.com**
 Once we have created the tasks we call again backend service to get tasks by Title and email, the title for 
 the first task is **Send form 1**,
-
+![EndpointLobbes](Docs/AllStatus0.png)
 When we get that task we procced to change the status to **In progress** 
 and we will send the first form to the lead
 
-
+![EndpointLobbes](Docs/EndpointLobbes.png)
 
 **2. Form 1 Flow**
 
