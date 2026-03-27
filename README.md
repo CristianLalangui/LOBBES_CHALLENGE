@@ -63,8 +63,9 @@ We make a log to the task with the Title **Send form1** to indicate the automati
 Status is reset via API, of all tasks filtered by email, in my case is **cristianalg740@gmail.com**<br>
 ![EndpointLobbes](Docs/AllStatusto0.png)<br>
 Once we have created the tasks we call again backend service to get tasks by Title and email, the title for 
-the first task is **Send form 1**,
+the first task is **Send form 1**,<br>
 
+![EndpointLobbes](Docs/form1email.png)<br>
 When we get that task we procced to change the status to **In progress** 
 and we will send the first form to the lead
 
@@ -84,6 +85,8 @@ coninues being the same  and by Title, that in this case  the Title is **Send fo
 
 After we get that task, our backend will proceed to send the second form to the lead by email, and will change the status of the second Task, to **In progress** 
 
+Our bakend Service will send us the second form 
+![EndpointLobbes](Docs/form2email.png)<br
 
 
 **3. Form 2 Flow**
@@ -107,6 +110,9 @@ received
 
 But to add a taskLog with descripcion **Automation completed** , we must first filter by **proposed time**, if  ** proposed time  == yes**  we change
 the status of that task to **completed**, 
+
+Our bakend Service will send us the second form 
+![EndpointLobbes](Docs/form3email.png)<br
 
 
 ## 🔗 API Endpoints<br>
