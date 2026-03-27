@@ -115,9 +115,11 @@ the status of that task to **completed**<br>
 Then we call backend service to get tasks stored  in our Django project, and we filter by email which
 coninues being the same  and by Title, that in this case  the Title is **Send form 3**<br>
 
+![EndpointLobbes](Docs/getTask3.png)<br>
+
 
 After we get the  task,  our backend will proceed to send the third form to the lead by email, and will change the status of the second Task, to **In progress** 
-![EndpointLobbes](Docs/task3inProgress.png)<br>
+![EndpointLobbes](Docs/task3progress.png)<br>
 
 
 Our bakend Service will send us the third form <br>
@@ -133,9 +135,9 @@ received<br>
 If  **confirmation == confirm** <br>
 
 ![EndpointLobbes](Docs/filterByConfirm.png)<br>
-"e change
+We change
 the status of that task to **completed**,
-
+![EndpointLobbes](Docs/task3.png)<br>
 
 
 
