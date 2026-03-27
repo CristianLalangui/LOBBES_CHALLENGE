@@ -1,4 +1,4 @@
-# Lobbes Automation Integation 
+# Lobbes Automation Integration 
 
 ## 📐 Architecture 
 
@@ -20,7 +20,7 @@
 
 **2- N8N Workflow** 
 
->  Has the necsary nodes to make the worflow functional <br>
+>  Has the necesary nodes to make the worflow functional <br>
 >  Acts as a communication bridge between the backend and the CRM.”<br>
 >  Has the logic of all the workflow, and decides which Apis calls,
 
