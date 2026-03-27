@@ -111,7 +111,7 @@ After we get the  task,  our backend will proceed to send the third form to the 
 Once the lead submmits its responses of the second form, the responses will be saved in Django and n8n will recive a Json, with the information
 received
 
-But to add a taskLog with descripcion **Automation completed** , we must first filter by **proposed time**, if  ** proposed time  == yes**  we change
+But to add a taskLog with descripcion **Automation completed** , we must first filter by **proposed time**, if  **confirmation == confirm**  we change
 the status of that task to **completed**, 
 
 Our bakend Service will send us the third form <br>
