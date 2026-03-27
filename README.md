@@ -4,7 +4,7 @@
 
 **The Project's arquitecture has the following arquitecture :**
 
-![Arquitecture](Docs/Arquitectrue.png)
+![Arquitecture](Docs/ArquitectrueLobbes.png)
 
 
 **Components**
@@ -153,7 +153,9 @@ If everything goes OK ,  in the console will appear a message similar to this :
 
              Forwarding       https://pelletlike-primely-shalanda.ngrok-free.dev -> http://localhost:8000
              
-*This url, starting with https replaces your localhost and your port*          
+*This url, starting with https replaces your localhost and your port*     
+
+** N8N workflow 
          
 ##  🤖  Automation
 
