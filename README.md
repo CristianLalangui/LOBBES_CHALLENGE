@@ -89,7 +89,7 @@ coninues being the same  and by Title, that in this case  the Title is **Send fo
 After we get that task, our backend will proceed to send the second form to the lead by email, and will change the status of the second Task, to **In progress** 
 
 Our bakend Service will send us the second form<br>
-![EndpointLobbes](Docs/form2Email.png)<br
+![EndpointLobbes](Docs/form2Email.png)<br>
 
 
 **3. Form 2 Flow**
@@ -115,7 +115,7 @@ But to add a taskLog with descripcion **Automation completed** , we must first f
 the status of that task to **completed**, 
 
 Our bakend Service will send us the third form <br>
-![EndpointLobbes](Docs/form3Email.png)<br
+![EndpointLobbes](Docs/form3Email.png)<br>
 
 
 ## 🔗 API Endpoints<br>
