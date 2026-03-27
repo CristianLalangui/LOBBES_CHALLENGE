@@ -77,7 +77,7 @@ And we will send the first form to the lead<br>
 
 Once the lead submmits its responses of the first form, the responses will be saved in Django and n8n will recive a Json, with the information
 received<br>
-![EndpointLobbes](Docs/jsonForm1.png)<br>
+![EndpointLobbes](Docs/jsonFom1.png)<br>
 
 But to send the second email whith the second form,  we must first filter by **interest**<br>
 ![EndpointLobbes](Docs/filterbyINterest.png)<br>
@@ -110,7 +110,7 @@ But to send the third email with the third form, we must first filter by **propo
 
 If  **proposed time  == yes**  we change
 the status of that task to **completed**<br>
-![EndpointLobbes](Docs/task2Copleted.png)<br>
+![EndpointLobbes](Docs/task2Completed.png)<br>
 
 Then we call backend service to get tasks stored  in our Django project, and we filter by email which
 coninues being the same  and by Title, that in this case  the Title is **Send form 3**<br>
@@ -126,12 +126,17 @@ Our bakend Service will send us the third form <br>
 **4. Form 3 Flow**
  
 Once the lead submmits its responses of the second form, the responses will be saved in Django and n8n will recive a Json, with the information
-received
+received<br>
 
-But to add a taskLog with descripcion **Automation completed** , we must first filter by **proposed time**
+![EndpointLobbes](Docs/form3Json.png)<br>
 
-If  **confirmation == confirm**  we change
-the status of that task to **completed**, 
+If  **confirmation == confirm** <br>
+
+![EndpointLobbes](Docs/filterByConfirm.png)<br>
+"e change
+the status of that task to **completed**,
+
+
 
 
 
