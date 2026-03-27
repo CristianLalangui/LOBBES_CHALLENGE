@@ -155,7 +155,44 @@ If everything goes OK ,  in the console will appear a message similar to this :
              
 *This url, starting with https replaces your localhost and your port*     
 
-** N8N workflow 
-         
+**N8N workflow**<br>
+The project has four different workflows, each of them has a different function<br>
+The N8N workflows are the responsibles of communication between Backend Service and <br>
+(Django) and the Lobbes CRM, each workflow must be executed manuyally in the following order<br>
+
+
+**1️⃣ Workflow Tasks**<br>
+ 
+-Filter Tasks by Id and email
+-Decides which API calls<br>
+-Changes teh status of Tasks
+
+![tasksWf](Docs/WebhookTasks.png)
+
+
+**2️⃣ Workflow Form 1**<br>
+ 
+-Manages the responses of form 1<br>
+-Decides which API calls<br>
+-Changes the status of tasks<br>
+-Add tasksLogs to CRM<br>
+![WfForm1](Docs/workflow1.png)
+
+
+**3️⃣ Workflow Form 2**<br>
+ 
+-Manages the responses of form 2<br>
+-Decides which API calls<br>
+-Changes the status of tasks<br>
+-Add tasksLogs to CRM<br>
+![WfForm2](Docs/workflow2.png)
+
+
+**4️⃣ Workflow Form 3**<br>
+-Manages the responses of form 2<br>
+-Decides which API calls<br>
+-Changes the status of tasks<br>
+-Add tasksLogs to CRM<br>
+![WfForm3](Docs/workflow3.png)
 ##  🤖  Automation
 
