@@ -58,12 +58,13 @@ n8n retrieves tasks filtered by lead email, and proceed to pass this tasks to ba
 Tasks are created in Django backend, with a id<br>
 ![EndpointLobbes](Docs/TasksAddDjango.png)
 
-We make a log to the task with the Title **Send form1** to indicate the automation has inicialized
-![EndpointLobbes](Docs/logAutomatizonInicialized.png)<br>
-Status is reset via API, of all tasks filtered by email, in my case is **cristianalg740@gmail.com**
+We make a log to the task with the Title **Send form1** to indicate the automation has inicialized<br>
+![EndpointLobbes](Docs/logAutomatizonInicalized.png)<br>
+Status is reset via API, of all tasks filtered by email, in my case is **cristianalg740@gmail.com**<br>
+![EndpointLobbes](Docs/AllStatus0.png)<br>
 Once we have created the tasks we call again backend service to get tasks by Title and email, the title for 
 the first task is **Send form 1**,
-![EndpointLobbes](Docs/AllStatus0.png)<br>
+
 When we get that task we procced to change the status to **In progress** 
 and we will send the first form to the lead
 
