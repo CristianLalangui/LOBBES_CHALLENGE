@@ -127,7 +127,7 @@ if everything is OK, the console will show a mesage like this :
    For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/<br>
 
 
-**Ngrok System** <br>
+**Ngrok System** <br><br>
 Before run this executable, we must first have installed **Ngrok**<br>
 Open your console cmd and write the following command, 
 
@@ -148,7 +148,7 @@ If everything goes OK ,  in the console will appear a message similar to this :
    Connections                   ttl     opn     rt1     rt5     p50     p90<br>
                                  0       0       0.00    0.00    0.00    0.00<br>
                                  
-  Executing the previous ngrok command, we will get a temporary https url that is pubclic <br> and will help you to send forms and manage the logic of your backend service <br>
+  Executing the previous ngrok command, we will get a temporary https url that is pubclic <br> and will help you to send forms and manage the logic of your backend service<br><br>
   For example : 
 
              Forwarding       https://pelletlike-primely-shalanda.ngrok-free.dev -> http://localhost:8000
@@ -158,7 +158,7 @@ If everything goes OK ,  in the console will appear a message similar to this :
 **N8N workflow**<br>
 The project has four different workflows, each of them has a different function<br>
 The N8N workflows are the responsibles of communication between Backend Service and <br>
-(Django) and the Lobbes CRM, each workflow must be executed manuyally in the following order<br>
+(Django) and the Lobbes CRM.<br><br>Each workflow must be executed manuyally in the following order<br>
 
 
 **1️⃣ Workflow Tasks**<br>
