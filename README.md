@@ -76,17 +76,23 @@ And we will send the first form to the lead<br>
 **2. Form 1 Flow**
 
 Once the lead submmits its responses of the first form, the responses will be saved in Django and n8n will recive a Json, with the information
-received
+received<br>
+![EndpointLobbes](Docs/jsonForm1.png)<br>
 
-But to send the second email whith the second form,  we must first filter by **interest**
+But to send the second email whith the second form,  we must first filter by **interest**<br>
+![EndpointLobbes](Docs/filterbyINterest.png)<br>
 
-If  **interest == yes**  we changethe status of that task to **completed**, 
+If  **interest == yes**  we changethe status of that task to **completed**, <br>
 
-
+![EndpointLobbes](Docs/tsak1Completed.png)<br>
 Then we call backend service to get tasks stored  in our Django project, and we filter by email which
 coninues being the same  and by Title, that in this case  the Title is **Send form 2**<br>
 
-After we get that task, our backend will proceed to send the second form to the lead by email, and will change the status of the second Task, to **In progress** 
+![EndpointLobbes](Docs/getTask2Filter.png)<br>
+
+After we get that task, our backend will proceed to send the second form to the lead by email, and will change the status of the second Task, to **In progress** <br>
+
+![EndpointLobbes](Docs/task2Json.png)<br>
 
 Our bakend Service will send us the second form<br>
 ![EndpointLobbes](Docs/form2Email.png)<br>
