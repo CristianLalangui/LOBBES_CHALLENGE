@@ -63,11 +63,13 @@ We make a log to the task with the Title **Send form1** to indicate the automati
 Status is reset via API, of all tasks filtered by email, in my case is **cristianalg740@gmail.com**<br>
 ![EndpointLobbes](Docs/AllStatusto0.png)<br>
 Once we have created the tasks we call again backend service to get tasks by Title and email, the title for 
-the first task is **Send form 1**,<br>
+the first task is **Send form 1**,
+
+
+When we get that task we procced to change the status to **In progress**
+And we will send the first form to the lead<br>
 
 ![EndpointLobbes](Docs/form1email.png)<br>
-When we get that task we procced to change the status to **In progress** 
-and we will send the first form to the lead
 
 
 
@@ -79,6 +81,7 @@ received
 But to send the second email whith the second form,  we must first filter by **interest**
 
 If  **interest == yes**  we changethe status of that task to **completed**, 
+
 
 Then we call backend service to get tasks stored  in our Django project, and we filter by email which
 coninues being the same  and by Title, that in this case  the Title is **Send form 2**<br>
