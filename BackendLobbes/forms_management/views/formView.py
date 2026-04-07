@@ -54,7 +54,6 @@ class FormView1(APIView):
                 }
             }
 
-            # Al enviar esto, el nodo Wait entregará este objeto completo al siguiente nodo
             requests.post(n8n_url, json=payload, timeout=5,verify=True)
 
             return Response({"success": True, "message": "Datos enviados a n8n"}, status=status.HTTP_200_OK)
@@ -68,11 +67,13 @@ class FormView1(APIView):
             "success": False,
 
             "errors": serializer.errors,
-            "data_sent": data  # Para ver si los campos llegaron vacíos
+            "data_sent": data
         }, status=status.HTTP_400_BAD_REQUEST)
 
 
 class FormView2(APIView):
+
+
 
     def get(self, request):
         queryIdlead = request.GET.get('idLead')
@@ -110,7 +111,7 @@ class FormView2(APIView):
                 }
             }
 
-            # Al enviar esto, el nodo Wait entregará este objeto completo al siguiente nodo
+
             requests.post(n8n_url, json=payload, timeout=5, verify=True)
 
             return Response({"success": True}, status=status.HTTP_200_OK)
@@ -162,7 +163,7 @@ class FormView3(APIView):
                 }
             }
 
-            # Al enviar esto, el nodo Wait entregará este objeto completo al siguiente nodo
+
             requests.post(n8n_url, json=payload, timeout=5, verify=True)
 
             return Response({"success": True}, status=status.HTTP_200_OK)

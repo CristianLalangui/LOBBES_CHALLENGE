@@ -3,9 +3,7 @@ from django.db import models
 
 
 class StepFormChoices(models.TextChoices):
-    # Cada opción tiene:
-    # PRIMER valor → lo que se guarda en la base de datos
-    # SEGUNDO valor → lo que se muestra al usuario
+
 
     STEP1 = "1", "1"
     STEP2 = "2", "2"

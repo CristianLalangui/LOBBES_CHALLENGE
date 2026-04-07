@@ -4,9 +4,7 @@ from django.db import models
 
 
 class StepFormChoices(models.TextChoices):
-    # Cada opción tiene:
-    # PRIMER valor → lo que se guarda en la base de datos
-    # SEGUNDO valor → lo que se muestra al usuario
+
 
     STEP1 = "1", "1"
     STEP2 = "2", "2"
@@ -18,9 +16,9 @@ class FormularioRespuestaModel(models.Model):
     lead_id = models.CharField(max_length=25, unique=False, blank=True, null=True)
 
     form_step = models.CharField(
-        max_length=3,  # Longitud máxima del código del país
-        choices=StepFormChoices.choices,  # Opciones definidas en TextChoices
-        default=StepFormChoices.STEP1,  # Valor por defecto
+        max_length=3,
+        choices=StepFormChoices.choices,
+        default=StepFormChoices.STEP1,
         verbose_name="Step",
         help_text="(Cumpolsory)",
         null=True,
